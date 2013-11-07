@@ -4,10 +4,11 @@ using System.Linq;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Diagnostics;
 using Microsoft.WindowsAzure.ServiceRuntime;
+using Composite.WindowsAzure.WebRole;
 
 namespace Composite.WindowsAzure.Webrole.SimpleBoot
 {
-    public class WebRole : RoleEntryPoint
+    public class WebRole : CompositeWebRole
     {
         public override bool OnStart()
         {

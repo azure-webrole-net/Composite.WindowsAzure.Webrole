@@ -4,6 +4,9 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" value="deployment-{name}-{yymmdd}" />
+      <Setting name="Composite.WindowsAzure.WebRole.DisplayName" value="Composite Windows Azure Webrole" />
+      <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" value="UseDevelopmentStorage=true" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
