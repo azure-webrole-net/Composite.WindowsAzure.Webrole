@@ -3,6 +3,18 @@ Composite.WindowsAzure.Webrole
 
 The deployment packages for Composite Windows Azure. Windows Azure SDK 2.2
 
+### Install Guide
+Fork, Download or clone the soruce. We have packed it under releases for downloading a stable release. Open the solution in visual studio and edit the settings according to comments.
+
+A blog post will be ready very soon explaning alittle more about how the webrole works and how you setup a website after deploying the webrole.
+
+For SSL support, you need to specify a certificate with the deployment. You can specify more if you need to, and then use the thumbprint in the deployment configuration.
+
+
+### Tools
+
+At this point you will have to manually deploy and setup websites editing the xml files in the blob storage. We are working on two tools to simplify this. A .Net tool wher you specify the settings, log in to azure and deploy the webrole directly from this with no need for visual studio. Another tool is a management portal where you can, by oauth2, controll the webrole if the management plugin is installed. The management plugin is also soon done and will be released on nuget also when done. Stay tuned.
+
 ### Composite Windows Azure Simpleboot
 
 This is the deployment for the very basic setup with simplest set of configuration settings.
