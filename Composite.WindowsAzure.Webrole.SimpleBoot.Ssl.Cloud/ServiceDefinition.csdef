@@ -18,7 +18,7 @@
           <FixedPortRange max="9079" min="9061" />
         </AllocatePublicPortFrom>
       </InstanceInputEndpoint>
-      <InputEndpoint name="Endpoint3" protocol="https" port="8080" certificate="Composite.WindowsAzure.Certificates.Ssl" />
+      <InputEndpoint name="Endpoint3" protocol="https" port="443" certificate="Composite.WindowsAzure.Certificates.Ssl" />
     </Endpoints>
     <Imports>
       <Import moduleName="Diagnostics" />
