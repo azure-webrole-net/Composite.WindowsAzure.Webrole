@@ -6,7 +6,7 @@ The deployment packages for Composite Windows Azure. Windows Azure SDK 2.2
 ### Install Guide
 Fork, Download or clone the soruce. We have packed it under releases for downloading a stable release. Open the solution in visual studio and edit the settings according to comments.
 
-A blog post will be ready very soon explaning alittle more about how the webrole works and how you setup a website after deploying the webrole.
+This blob post give you alittle insigth into how the webrole works: http://www.s-innovations.net/Blog/2013/11/07/Composite-Windows-Azure-Webrole-version-1004-is-released
 
 For SSL support, you need to specify a certificate with the deployment. You can specify more if you need to, and then use the thumbprint in the deployment configuration.
 
