@@ -34,11 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Composite.WindowsAzure">
-      <HintPath>..\packages\Composite.WindowsAzure.2.0.0-beta-201401222\lib\net45\Composite.WindowsAzure.dll</HintPath>
+    <Reference Include="Composite.WindowsAzure, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Composite.WindowsAzure.2.0.0-beta-201401223\lib\net45\Composite.WindowsAzure.dll</HintPath>
     </Reference>
-    <Reference Include="Composite.WindowsAzure.WebRole">
-      <HintPath>..\packages\Composite.WindowsAzure.Webrole.2.0.0-beta-201401222\lib\net45\Composite.WindowsAzure.WebRole.dll</HintPath>
+    <Reference Include="Composite.WindowsAzure.WebRole, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Composite.WindowsAzure.Webrole.2.0.0-beta-201401223\lib\net45\Composite.WindowsAzure.WebRole.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>

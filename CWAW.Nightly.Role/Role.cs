@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace CWAW.Nightly.Role
 {
 
-    public class MyWorkerPlugin : IWebrolePlugin
+    public class MyWorkerPlugin : IWebRolePlugin
     {
 
 
