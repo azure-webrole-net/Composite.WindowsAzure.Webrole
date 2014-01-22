@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Webrole.Package" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="WebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName={account};AccountKey={key}" />
+      <Setting name="SInnovations.Servicebus.ConnectionString" value="Endpoint=sb://{namespace}.servicebus.windows.net/;SharedSecretIssuer=owner;SharedSecretValue={servicebuskey}" />
+      <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" value="s-innovations-deployment-300613" />
+      <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName={account};AccountKey={key}" />
+      <Setting name="Composite.WindowsAzure.WebRole.Iis.AppPoolIdleTimeoutMinutes" value="0" />
+      <Setting name="Composite.WindowsAzure.WebRole.DisplayName" value="Composite Windows Azure Webrole EU" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Composite.WindowsAzure.Certificates.Ssl" thumbprint="" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

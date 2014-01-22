@@ -5,13 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>2.2</ProductVersion>
-    <ProjectGuid>25c1a998-525f-4f1f-bed2-47162662c188</ProjectGuid>
+    <ProjectGuid>350a7872-d191-4ace-be36-40fc3e025438</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CWAW.Nightly.Cloud</RootNamespace>
-    <AssemblyName>CWAW.Nightly.Cloud</AssemblyName>
+    <RootNamespace>Webrole.Package</RootNamespace>
+    <AssemblyName>Webrole.Package</AssemblyName>
     <StartDevelopmentStorage>True</StartDevelopmentStorage>
-    <Name>CWAW.Nightly.Cloud</Name>
+    <Name>Webrole.Package</Name>
+    <PackageEnableRemoteDebugger>False</PackageEnableRemoteDebugger>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,24 +34,23 @@
   <!-- Items for the project -->
   <ItemGroup>
     <ServiceDefinition Include="ServiceDefinition.csdef" />
-    <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CWAW.Nightly.Role\CWAW.Nightly.Role.csproj">
-      <Name>CWAW.Nightly.Role</Name>
-      <Project>{9a40e422-8e4f-43a0-9c7d-a6b388922076}</Project>
+    <ProjectReference Include="..\WebRole\WebRole.csproj">
+      <Name>WebRole</Name>
+      <Project>{5ca3e2fa-d5da-441a-a0f7-37a1f08e35fa}</Project>
       <Private>True</Private>
-      <RoleType>Worker</RoleType>
-      <RoleName>CWAW.Nightly.Role</RoleName>
+      <RoleType>Web</RoleType>
+      <RoleName>WebRole</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CWAW.Nightly.RoleContent\" />
+    <Folder Include="WebRoleContent\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CWAW.Nightly.RoleContent\diagnostics.wadcfg">
+    <Content Include="WebRoleContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

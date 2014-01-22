@@ -20,9 +20,9 @@ Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CWAW.SecureBoot.Cloud", "CW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite.WindowsAzure.Tools.CompositeEncryptionCmd", "Composite.WindowsAzure.Tools.CompositeEncryptionCmd\Composite.WindowsAzure.Tools.CompositeEncryptionCmd.csproj", "{B318BC19-80D0-4452-8EC7-F0A3424A05A8}"
 EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CWAW.Nightly.Cloud", "CWAW.Nightly.Cloud\CWAW.Nightly.Cloud.ccproj", "{25C1A998-525F-4F1F-BED2-47162662C188}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRole", "WebRole\WebRole.csproj", "{5CA3E2FA-D5DA-441A-A0F7-37A1F08E35FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CWAW.Nightly.Role", "CWAW.Nightly.Role\CWAW.Nightly.Role.csproj", "{9A40E422-8E4F-43A0-9C7D-A6B388922076}"
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Webrole.Package", "Webrole.Package\Webrole.Package.ccproj", "{350A7872-D191-4ACE-BE36-40FC3E025438}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,14 +50,14 @@ Global
 		{B318BC19-80D0-4452-8EC7-F0A3424A05A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B318BC19-80D0-4452-8EC7-F0A3424A05A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B318BC19-80D0-4452-8EC7-F0A3424A05A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{25C1A998-525F-4F1F-BED2-47162662C188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{25C1A998-525F-4F1F-BED2-47162662C188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{25C1A998-525F-4F1F-BED2-47162662C188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{25C1A998-525F-4F1F-BED2-47162662C188}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A40E422-8E4F-43A0-9C7D-A6B388922076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A40E422-8E4F-43A0-9C7D-A6B388922076}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A40E422-8E4F-43A0-9C7D-A6B388922076}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A40E422-8E4F-43A0-9C7D-A6B388922076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA3E2FA-D5DA-441A-A0F7-37A1F08E35FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA3E2FA-D5DA-441A-A0F7-37A1F08E35FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA3E2FA-D5DA-441A-A0F7-37A1F08E35FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA3E2FA-D5DA-441A-A0F7-37A1F08E35FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350A7872-D191-4ACE-BE36-40FC3E025438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350A7872-D191-4ACE-BE36-40FC3E025438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350A7872-D191-4ACE-BE36-40FC3E025438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350A7872-D191-4ACE-BE36-40FC3E025438}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
