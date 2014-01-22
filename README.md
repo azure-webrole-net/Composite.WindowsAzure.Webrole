@@ -63,3 +63,36 @@ You need to add a certificate, upload it to azure or use publish in VS.
 </ServiceConfiguration>
 ```
 
+### Plugins
+One of the nice things you get from using the webrole is that beside hosting your websites, you get an easy way to implement some background processing without having to spin up additional roles. Its simple to create a plugin that runs in the background on the server. You dont have to worry about setting a service on the server and things like that, just write the c# code that get the job done.
+
+An example of this is seen in : 
+https://github.com/s093294/Composite.WindowsAzure.Webrole/blob/master/CWAW.Nightly.Role/Role.cs
+
+```
+public class MyWorkerPlugin : IWebrolePlugin
+{
+
+    public int Priority{ get { return WebrolePluginPriority.low;}}
+
+    public void WebsitesPeriodeCheck(object sender, WebsiteSettingsChangedEventArgs args)
+    {
+    }
+
+    public Task InitializePluginAsync()
+    {
+        return Task.FromResult<object>(null);
+    }
+
+    public Task WebsitesPeriodeCheckAsync(object sender, WebsiteSettingsChangedEventArgs args)
+    {
+        return Task.FromResult<object>(null);
+    }
+
+    public void Dispose()
+    {
+       
+    }
+}
+```
+
