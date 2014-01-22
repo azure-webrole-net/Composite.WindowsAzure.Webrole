@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition name="CWAW.SecureBoot.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2013-10.2.2">
+  <WebRole name="Composite.WindowsAzure.Webrole.SimpleBoot" vmsize="ExtraSmall">
+    <Runtime executionContext="elevated">
+    </Runtime>
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+      <InstanceInputEndpoint name="Endpoint2" protocol="tcp" localPort="80">
+        <AllocatePublicPortFrom>
+          <FixedPortRange max="9079" min="9061" />
+        </AllocatePublicPortFrom>
+      </InstanceInputEndpoint>
+    </Endpoints>
+    <Imports>
+    </Imports>
+    <LocalResources>
+      <LocalStorage name="c1" cleanOnRoleRecycle="false" sizeInMB="10000" />
+    </LocalResources>
+    <ConfigurationSettings>
+      <Setting name="Composite.WindowsAzure.WebRole.Diagnostics.ConnectionString" />
+      <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" />
+      <Setting name="Composite.WindowsAzure.WebRole.Management.Email" />
+      <Setting name="Composite.WindowsAzure.WebRole.Management.UseEncryption" />
+      <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Composite.WindowsAzure.SettingsEncryption" storeLocation="LocalMachine" storeName="My" />
+    </Certificates>
+  </WebRole>
+</ServiceDefinition>

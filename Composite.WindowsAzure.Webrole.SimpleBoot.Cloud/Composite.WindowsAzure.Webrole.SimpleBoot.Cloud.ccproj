@@ -37,6 +37,14 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Composite.WindowsAzure.Webrole.SimpleBootContent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Composite.WindowsAzure.Webrole.SimpleBootContent\diagnostics.wadcfg">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Composite.WindowsAzure.Webrole.SimpleBoot\Composite.WindowsAzure.Webrole.SimpleBoot.csproj">
       <Name>Composite.WindowsAzure.Webrole.SimpleBoot</Name>
       <Project>{68dda994-bfda-49f8-abf7-8b60a52e795d}</Project>
@@ -45,14 +53,6 @@
       <RoleName>Composite.WindowsAzure.Webrole.SimpleBoot</RoleName>
       <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Composite.WindowsAzure.Webrole.SimpleBootContent\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Composite.WindowsAzure.Webrole.SimpleBootContent\diagnostics.wadcfg">
-      <SubType>Content</SubType>
-    </Content>
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CWAW.SecureBoot.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+  <Role name="Composite.WindowsAzure.Webrole.SimpleBoot">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Composite.WindowsAzure.WebRole.Diagnostics.ConnectionString" value="MIICRgYJKoZIhvcNAQcDoIICNzCCAjMCAQAxggFlMIIBYQIBADBJMDUxMzAxBgNVBAMTKkNvbXBvc2l0ZS5XaW5kb3dzQXp1cmUuT3BlbkNNUy5DZXJ0aWZpY2F0ZQIQFo1k6PzoE7pGqGW22KSGOjANBgkqhkiG9w0BAQEFAASCAQAzKQsPlCU9iwde3CCuvKyOjkdUQUjyyZTGkyqGulS2IDiyc+vXP8XKZzFxZOcSfRIedrS04lJbIYaocTd05mbkdPMe9f1bb7q9oa1E8W5xShSRU8N2Tm7ywxkUpznUhhVASYjP+ks+ui3FB6Esogqmvbaw50zIkJK92mo5i+TfbvmtectIs5Q3g6QKUmHC2bA1Kbf6c9cuKTGPyZoD7LBJu/bJ6lwpp6mExXAByCLpAcezZddmJWZc+IKKqhgGFzVJb15FvzvF1iVNsanJteqxRS2x1Oymb8VfHrNPpfBy6ybDnTcdbrEmaoKXifW2XncpLBWTKmgw8irU6StaYCZIMIHEBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAINuW6dbxnegIGg4cNIPfDRbe4VUPvfGwwQ++FsnwLAhXnyBTz2PUrezkJzkbW2t/XwDwYKfWg/xnDM2SI6M3O1bgItKyLyHlpRlnKfbrmbrIdkwbheny7JCbUU9CWCK4BlqtZ0jtlybzz4Jy9Mq2IOL/MBlmJ511YJ0rf2Dh6k4BT+sa6GQQHLCtNRGXYISsAH43WksNP76gvLkLk+rmkWPOG8fOazAJuTmA==" />
+      <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" value="MIICRgYJKoZIhvcNAQcDoIICNzCCAjMCAQAxggFlMIIBYQIBADBJMDUxMzAxBgNVBAMTKkNvbXBvc2l0ZS5XaW5kb3dzQXp1cmUuT3BlbkNNUy5DZXJ0aWZpY2F0ZQIQFo1k6PzoE7pGqGW22KSGOjANBgkqhkiG9w0BAQEFAASCAQAzKQsPlCU9iwde3CCuvKyOjkdUQUjyyZTGkyqGulS2IDiyc+vXP8XKZzFxZOcSfRIedrS04lJbIYaocTd05mbkdPMe9f1bb7q9oa1E8W5xShSRU8N2Tm7ywxkUpznUhhVASYjP+ks+ui3FB6Esogqmvbaw50zIkJK92mo5i+TfbvmtectIs5Q3g6QKUmHC2bA1Kbf6c9cuKTGPyZoD7LBJu/bJ6lwpp6mExXAByCLpAcezZddmJWZc+IKKqhgGFzVJb15FvzvF1iVNsanJteqxRS2x1Oymb8VfHrNPpfBy6ybDnTcdbrEmaoKXifW2XncpLBWTKmgw8irU6StaYCZIMIHEBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECAINuW6dbxnegIGg4cNIPfDRbe4VUPvfGwwQ++FsnwLAhXnyBTz2PUrezkJzkbW2t/XwDwYKfWg/xnDM2SI6M3O1bgItKyLyHlpRlnKfbrmbrIdkwbheny7JCbUU9CWCK4BlqtZ0jtlybzz4Jy9Mq2IOL/MBlmJ511YJ0rf2Dh6k4BT+sa6GQQHLCtNRGXYISsAH43WksNP76gvLkLk+rmkWPOG8fOazAJuTmA==" />
+      <Setting name="Composite.WindowsAzure.WebRole.Management.Email" value="pks@composite.net" />
+      <Setting name="Composite.WindowsAzure.WebRole.Management.UseEncryption" value="true" />
+      <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" value="deployment-test-131114" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Composite.WindowsAzure.SettingsEncryption" thumbprint="B5EB95F7710ECB5BEE59FD159C398ECD1BD64924" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
