@@ -9,9 +9,12 @@
       <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName={account};AccountKey={key}" />
       <Setting name="Composite.WindowsAzure.WebRole.Iis.AppPoolIdleTimeoutMinutes" value="0" />
       <Setting name="Composite.WindowsAzure.WebRole.DisplayName" value="Composite Windows Azure Webrole EU" />
+          <!-- Get your service account at www.azurewebrole.net -->
+      <Setting name="Composite.WindowsAzure.Webrole.License.AccountName" value="" />
+      <Setting name="Composite.WindowsAzure.Webrole.License.Key" value="" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Composite.WindowsAzure.Certificates.Ssl" thumbprint="" thumbprintAlgorithm="sha1" />
+      <Certificate name="Composite.WindowsAzure.Certificates.Ssl" thumbprint="0" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
 </ServiceConfiguration>

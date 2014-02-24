@@ -31,6 +31,9 @@
       <Setting name="Composite.WindowsAzure.WebRole.Iis.AppPoolIdleTimeoutMinutes" />
       <Setting name="Composite.WindowsAzure.WebRole.DisplayName" />
       <Setting name="SInnovations.Servicebus.ConnectionString" />
+      <!-- Get your service account at www.azurewebrole.net -->
+      <Setting name="Composite.WindowsAzure.Webrole.License.AccountName"  />
+      <Setting name="Composite.WindowsAzure.Webrole.License.Key"  />
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="Composite.WindowsAzure.Certificates.Ssl" storeLocation="LocalMachine" storeName="My" />

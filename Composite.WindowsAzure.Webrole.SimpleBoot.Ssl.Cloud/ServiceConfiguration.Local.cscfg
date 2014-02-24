@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="Composite.WindowsAzure.Webrole.SimpleBoot.Ssl.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-10.2.2">
+<ServiceConfiguration serviceName="Composite.WindowsAzure.Webrole.SimpleBoot.Ssl.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2013-10.2.2">
   <Role name="Composite.WindowsAzure.Webrole.SimpleBoot">
     <Instances count="1" />
     <ConfigurationSettings>
@@ -11,9 +11,12 @@
       <Setting name="Composite.WindowsAzure.WebRole.DisplayName" value="Composite Windows Azure Webrole" />
       <!--The connection setting of where to have websites and deployment files.-->
       <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" value="UseDevelopmentStorage=true" />
+      <!-- Get your service account at www.azurewebrole.net -->
+      <Setting name="Composite.WindowsAzure.Webrole.License.AccountName" value="" />
+      <Setting name="Composite.WindowsAzure.Webrole.License.Key" value="" />
     </ConfigurationSettings>
     <Certificates>
-      <Certificate name="Composite.WindowsAzure.Certificates.Ssl" thumbprint="" thumbprintAlgorithm="sha1" />
+      <Certificate name="Composite.WindowsAzure.Certificates.Ssl" thumbprint="0" thumbprintAlgorithm="sha1" />
     </Certificates>
   </Role>
 </ServiceConfiguration>

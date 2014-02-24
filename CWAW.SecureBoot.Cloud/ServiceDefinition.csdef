@@ -26,9 +26,11 @@
     <ConfigurationSettings>
       <Setting name="Composite.WindowsAzure.WebRole.Diagnostics.ConnectionString" />
       <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" />
-      <Setting name="Composite.WindowsAzure.WebRole.Management.Email" />
       <Setting name="Composite.WindowsAzure.WebRole.Management.UseEncryption" />
       <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" />
+      <!-- Get your service account at www.azurewebrole.net -->
+      <Setting name="Composite.WindowsAzure.Webrole.License.AccountName" />
+      <Setting name="Composite.WindowsAzure.Webrole.License.Key" />
     </ConfigurationSettings>
     <Certificates>
       <Certificate name="Composite.WindowsAzure.SettingsEncryption" storeLocation="LocalMachine" storeName="My" />

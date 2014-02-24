@@ -27,6 +27,9 @@
       <Setting name="Composite.WindowsAzure.WebRole.DeploymentName" />
       <Setting name="Composite.WindowsAzure.WebRole.DisplayName" />
       <Setting name="Composite.WindowsAzure.WebRole.Storage.ConnectionString" />
+      <!-- Get your service account at www.azurewebrole.net -->
+      <Setting name="Composite.WindowsAzure.Webrole.License.AccountName"/>
+      <Setting name="Composite.WindowsAzure.Webrole.License.Key"  />
     </ConfigurationSettings>
     <LocalResources>
       <LocalStorage name="c1" cleanOnRoleRecycle="false" sizeInMB="10000" />
